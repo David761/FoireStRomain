@@ -1,0 +1,117 @@
+<!DOCTYPE>
+<html style=""><head>
+        <meta charset="utf-8">
+        <title>Accueil | Foire St-Romain</title>        
+        <link rel="stylesheet" href="css/normalize.css">   <!-- ./css/normalize.css fonctionne aussi --> <!-- D'abord la feuille de style qui armonise le rendu dans tout les navigateurs -->
+        <link rel="stylesheet" href="css/styles.css">   
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <!-- Font awesome | Icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Feuille de reset css= unifie tout, donc a nous de tout définir -->
+        <!-- Normalize Css (mieux) | Pour que dans tout les navigateurs ce soit pareil -->
+        <!-- Déclaration de feuilles de styles -->
+ 
+</head>
+
+    <body>
+        <!-- le contenu de ma page -->
+        <div class="page">
+
+            <p><strong>Foire St Romain | Deuxieme fête foraine de France</strong></p>
+
+            <!-- TOP HEADER -->
+            <div class="topheader">
+                <p>Espace Clients : 
+                    <a href="#">Connexion</a> | 
+                    <a href="#">Inscription</a>
+                </p>
+
+            </div> <!-- fin topheader -->
+
+            <!-- HEADER -->
+            <header>
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./img/logoF.jpg" alt="Logo Foire St Romain">
+                    </a>
+                </div>
+                <!-- faire rapide | nav>ul>li*3>a[href=#] -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="#page">Présentation</a></li>
+                        <li><a href="#projecteur">Contact</a></li>
+                    </ul>
+                </nav>
+
+
+            </header>
+
+        </div> <!-- fin de page -->
+
+        <!-- PROJECTEUR -->
+
+        <div id="projecteur"></div>
+        <div class="page">
+            <section>
+                <aside>
+                    <img src="img/confiserie.jpg" alt="Enfantimage">
+                </aside>
+                <article>
+                    <h3>La Foire</h3>
+                    <p>La foire Saint-Romain, est une fête foraine rouennaise annuelle se déroulant de la <span>fin octobre à la fin novembre</span>. Elle regroupe environ 220 attractions. Elle est la deuxième plus grande fête foraine de France après la foire du Trône. </p>
+
+                    <p>Jusqu'en 2014 elle s'étalait sur 1 800 mètres sur les quais rive gauche. Les quais faisant l'objet d'une rénovation globale, elle se situe dorénavant sur <span>l'esplanade Saint-Gervais près des Docks</span></p>
+             
+                </article>
+
+                <div class="partenaires">
+                    <h2>Les partenaires</h2>
+                    <ul>
+                        <li><img src="img/Logo_TCAR.png" alt="LogoTcar"></li>
+                        <li><img src="img/logoMETROPOLE.jpg" alt="LogoMetropole"></li>
+                        <li><img src="img/logoNormandie.jpg" alt="LogoNormandie"></li>
+                        <li><img src="img/RouenLogo.png" alt="LogoRouen"></li>
+
+                    </ul>   
+            </div></section>
+        </div> <!-- Fin page --> 
+        <footer>
+                <div id="page">
+
+                    <div class="gmap">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.003745121118!2d-3.6905331842888067!3d40.453054079360946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e23705d39f%3A0xa8fff6d26e2b1988!2sSantiago+Bernab%C3%A9u+Stadium!5e0!3m2!1sfr!2sfr!4v1508489222838" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="newsletter">
+                        <form name="newsletter" action="newsletter.php" method="POST">
+                           <fieldset>
+                                <legend>Newsletter</legend>
+                                <input type="text" name="nom" placeholder="Nom">
+                                <input type="text" name="prenom" placeholder="Prénom">
+                                <input type="email" name="email" placeholder="Email" required="">
+                                <input type="submit" value="M'inscrire !">
+                            </fieldset>
+
+                        </form>
+                    </div>
+                    <div class="contact">
+                        <address>
+                            <h3>Contactez nous</h3>                        
+                            <a href="tel:+330232102501">
+                                <i class="fa fa-phone" aria-hidden="true"></i>02 32 10 25 01</a><br>
+                            <a href="mailto:FoireDeRouen@gmail.com">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                 FoireDeRouen@gmail.com</a><br>
+                                <i class="fa fa-futbol-o" aria-hidden="true"></i>
+                                    18/28 Place Des Docks<br>
+                                    76000 ROUEN<br>
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                                    FRANCE
+                        </address>
+                    </div>
+                </div>
+            </footer>
+
+    
+    </body></html>

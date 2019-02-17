@@ -1,0 +1,308 @@
+body {
+    background:url(http://rouen.blogs.com/.a/6a00e551daa20b88330134886814d2970c-pi) #170201;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* filter: grayscale(1); */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'lato', sans-serif;
+}
+
+.page {
+    /* Dimension & positionnement */
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    /* DÃ©coration */
+    margin: 40px auto;
+
+    /* Est Ã©quivalent Ã  :
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 40px auto 40px auto;
+    */
+}
+
+.page > p { /* Je selectionne tout les enfants de page */
+    font-family: 'lato', sans-serif;
+    color: #FFF;
+}
+
+/* ===============TOP HEADER============= */
+.topheader {
+            /* Dimension & positionnement */
+    width: 100%;
+    height: 30px;
+    float: left;
+
+    /* DÃ©coration */
+    background-image: linear-gradient(180deg, #281555 0%, #1a0645 30%);
+    border-top-left-radius: 5px; /* Les bordures arrondis */
+}
+
+.topheader p { /* Le text dans topheader */
+    /* DÃ©coration */
+    font-family: 'lato', sans-serif;
+    text-align: right;
+    margin: 0;
+    line-height: 28px;
+    margin: 0 10px 0 0;
+    color: white;
+}
+
+.topheader p a { /* les liens dans le texte du topheader */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.topheader p a:hover { /* le survol des liens dans blabla */
+    text-decoration: underline; /* Donc les liens quand on passe souligner */
+}
+
+
+/* ===============HEADER============= */
+
+header {
+    width: 100%;
+    height: 130px;
+    float: left;
+    background: #e40c63;
+}
+                /* Header pas de point car c'est une div, .logo car c'est une classe et pour un ... = # */
+
+.logo { /* Quand on travail sur une image sur le web, on precise que la largeur ou la hauteur pas les 2 pour garder les proportions ou object-fit sachant qu'elle n'est pas prise en forme par internet explorer et qu'il faudra utiliser un polifil */
+       width: (25% -10px);
+      height: auto;
+      float: left;
+     margin: 10px 0 0 10px;
+}
+                
+.logo img{
+    height: 120px
+}
+
+/* ===============MENU DU HEADER============= */
+
+nav {
+    width: 75%;
+    height: 100%;
+    float: left;
+}
+
+nav ul {
+    margin: 0; /* Je retire les marges par dÃ©faut */
+    padding: 0;
+    text-align: center;
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li :last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    font-family: 'lato', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: #281555;
+    text-transform: uppercase;
+    line-height: 125px;
+}
+nav ul li a:hover {
+    color: #150100;
+}
+nav ul li.current a {}
+
+
+/* LE PROJECTEUR */
+
+#projecteur {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    float: left;
+}
+
+#projecteur img {
+
+    width: 100%;
+    height: 270px;
+}
+
+/* ZONE DE CONTENU */
+
+section {
+    /* Dimensions et positionnement */
+    width: 100%;
+    height: auto;
+    float: left;
+    /* DÃ©coration */
+    background-color: rgba(37, 18, 80, 0.92);
+    margin-top: 300px;
+}
+section aside {
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+section aside img {
+    width: 100%;
+    max-width: 100%;
+}
+
+section article {
+    width: 50%;
+    height: auto;
+    float: left;
+    /* DÃ©coration */
+    padding: 1% 5% 0 5%;
+    box-sizing: border-box;
+}
+
+section article h3 {
+    text-align: center;
+    font-weight: normal;
+    color: bisque;
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+section article p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(195, 179, 160);
+    text-align: justify;
+}
+
+article p span {
+
+color: rgb(210, 104, 99);
+
+font-size: 16px;
+}
+
+
+/* PARTENAIRE */
+
+.partenaires {
+    /* Dimensions et positionnement */
+    width: 100%;
+    height: auto;
+    float: left;
+    /* DÃ©coration */
+    /* background-image: linear-gradient(180deg, #281555 0%, #1a0645 30%); */
+    padding-bottom: 20px;
+    background: #170201;
+}
+.partenaires h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #ffe4c4;
+    font-style: italic;
+}
+.partenaires ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.partenaires ul li {
+    width: calc(95% / 4);
+    display: inline-block;
+}
+.partenaires ul li img {
+    max-width: 100%;
+    /* width: 50%; */
+    height: 110px;
+    /* filter: grayscale(1); */
+}
+
+/* PIED DE PAGE */
+
+footer{
+    /* Dimension et positionnement */
+    width: 100%;
+    height: auto;
+    float: left;
+    padding-bottom: 10px;
+    background: bisque;
+}   
+
+
+/* Ici je souhaite que mes 3 blocks soient positionnÃ©s, les un Ã  cÃ´tÃ© des autres, ..
+    Mon pied de page Ã©tant Ã©gale Ã  960px, je divise par mon nombre de blocks (3) */
+
+.gmap {
+
+/* Dimension & Positionnement */
+width: calc( (100% / 3) - 10px);
+float: left;
+margin-left: 10px;
+}
+
+.newsletter { 
+width: calc( (100% / 3) - 10px);
+float: left;
+margin-left: 10px;
+}
+
+.newsletter fieldset {font-family: 'Roboto Condensed', sans-serif;border-radius: 8px;border: 2px solid rgb(23, 2, 1);color: rgb(23, 2, 1);height: 180px;}
+
+.newsletter legend {}
+
+
+
+.newsletter input {
+width: 91%;
+height: 30px;
+margin-bottom: 15px;
+padding: 5px 10px;
+}
+
+.newsletter input[type=submit]{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background: rgb(23, 2, 1);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.contact {
+
+width: calc( (100% / 3) - 10px);
+
+height: 156px;
+
+float: left;
+
+margin-left: 10px;
+
+/*color: #170201;*/
+
+padding-left: 30px;
+
+box-sizing: border-box;
+}
+
+.contact address{
+    font-family: Arial;
+    font-size: 15px;
+    margin-top: 39px;
+    margin-left: 38px;
+}
+
+.contact a {
+    color: #170201;
+    text-decoration: none;
+}
